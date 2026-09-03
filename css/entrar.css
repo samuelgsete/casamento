@@ -1,0 +1,30 @@
+main {
+    background-color: #fff;
+    width: 360px;
+    padding: 60px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+main > div {
+    text-align: center;
+}
+
+div#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main > p {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: center;
+    color: #744f0d;
+}

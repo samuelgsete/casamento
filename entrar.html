@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/entrar.css">
+        <title>Samuel & Layla</title>
+    </head>
+    <body>
+        <div id="content">
+            <main>
+                <div>
+                    <img src="./img/logotipo2.png" alt="Samuel & Layla" width="180px">
+                </div>
+                <form name="entrar" method="POST">
+                    <div class="form-field">
+                        <label for="codigo">Codigo de convite</label>
+                        <input id="codigo" name="codigo" type="text" placeholder="Ex: E0T826" maxlength="6" required>
+                    </div>
+                    <button class="btn btn-primary block" type="submit">Entrar</button>
+                </form>
+                <p>"Celebre conosco este momento tão especial 💍."</p>
+            </main>
+        </div>
+        <script>
+            const form = document.forms['entrar'];
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const codigo = form.codigo.value.trim();
+
+                if(codigo === "") {
+                    alert('O codigo de convite é obrigatório');
+                    form.codigo.value = '';
+                    return;
+                }
+
+                console.log(codigo);
+
+            });
+        </script>
+    </body>
+</html>

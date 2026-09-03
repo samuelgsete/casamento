@@ -11,10 +11,10 @@ div.form-field {
 div.form-field > label {
     font-size: 15px;
     font-weight: 600;
-    color: #5f5f5f;
+    color: #735b31;
 }
 
-div.form-field > select {
+div.form-field > select, div.form-field > input {
     all: unset;
     height: 45px;
     font-size: 17px;
@@ -28,11 +28,11 @@ div.form-field > select {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
-div.form-field > select:hover {
+div.form-field > select:hover, div.form-field > input {
     background-color: #e1a83511;
 }
 
-div.form-field > select:focus {
+div.form-field > select:focus, div.form-field > input:focus {
     outline: 2.5px solid #df9f30;
 }
 
